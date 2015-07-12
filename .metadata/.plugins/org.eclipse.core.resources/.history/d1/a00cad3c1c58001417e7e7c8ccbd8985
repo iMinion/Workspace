@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+class Task1 {
+	public static String reverse(String str) {
+		int i = str.length() - 1;
+		String res = "";
+		while(i >= 0) {
+			res = res + str.charAt(i);
+			i--;
+		}
+		return res;
+	}
+	public static String add(String str1, String str2) {
+		String result = "";
+		int c = 0;
+		for(int i = str1.length() - 1; i >= 0; i--) {
+			int a = (int) str1.charAt(i);
+			int b = (int) str2.charAt(i);
+			result = result + (a + b + c)%10;
+			c = (a + b + c)/10;
+		}
+		return reverse(result);
+	}
+	
+	public static void main(String[] args) {
+		String str1, str2, result;
+		Scanner sc = new Scanner(System.in);
+		str1 = sc.nextLine();
+		str2 = sc.nextLine();
+		sc.close();
+		if(str1.length() == str2.length()) {
+			System.out.println("The addition of two number is " + add(str1, str2));
+		}
+		else if(str1.length() > str2.length()) {
+			String s = "";
+			int i = 0;
+			int a = str1.length() - str2.length();
+			while(i < a) {
+				s = s + "0";
+				i++;
+			}
+			int j = 0;
+			while(j < str2.length()) {
+				s = s + str2.charAt(j);
+				j++;
+			}
+			System.out.println("The addition of two number is " + add(str1, s));
+		}
+		else {
+			String s = "";
+			int i = 0;
+			int a = str2.length() - str1.length();
+			while(i < a) {
+				s = s + "0";
+				i++;
+			}
+			int j = 0;
+			while(j < str1.length()) {
+				s = s + str1.charAt(j);
+				j++;
+			}
+			System.out.println("The addition of two number is " + add(str2, s));
+		}
+	}
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="closes" prefHeight="586.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minigoogle.Client">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="175.0" layoutY="58.0" prefHeight="40.0" prefWidth="177.0" text="Mini Google" textFill="#392bbf">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchingText" layoutX="68.0" layoutY="129.0" prefHeight="25.0" prefWidth="428.0" />
+      <Button fx:id="submit" layoutX="164.0" layoutY="167.0" mnemonicParsing="false" onAction="#displayUrls" prefHeight="25.0" prefWidth="107.0" text="Submit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ListView fx:id="urlsList" layoutX="-1.0" layoutY="256.0" prefHeight="330.0" prefWidth="545.0" />
+      <Button fx:id="clear" layoutX="282.0" layoutY="168.0" mnemonicParsing="false" onAction="#clear" prefHeight="35.0" prefWidth="107.0" text="Clear">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" layoutX="516.0" mnemonicParsing="false" onAction="#closeApplication" prefHeight="25.0" prefWidth="30.0" text="X" />
+      <Label layoutX="-2.0" layoutY="220.0" prefHeight="35.0" prefWidth="166.0" text="Search Results" textFill="#133254">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

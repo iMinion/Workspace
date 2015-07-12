@@ -1,0 +1,108 @@
+16:07:26 **** Build of configuration Debug for project Prep ****
+make all 
+Building file: ../hello.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello.d" -MT"hello.d" -o "hello.o" "../hello.c"
+Finished building: ../hello.c
+ 
+Building target: Prep
+Invoking: MacOS X C Linker
+gcc  -o "Prep"  ./hello.o   
+Finished building target: Prep
+ 
+16:07:32 **** Incremental Build of configuration Debug for project Prep ****
+make all 
+make: Nothing to be done for `all'.
+06:58:48 **** Build of configuration Debug for project Minigoogleprep ****
+make all 
+Building file: ../minigoogle.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"minigoogle.d" -MT"minigoogle.d" -o "minigoogle.o" "../minigoogle.c"
+../minigoogle.c:54:6: warning: unused variable 'i' [-Wunused-variable]
+        int i;
+            ^
+../minigoogle.c:105:7: warning: unused variable 'j' [-Wunused-variable]
+                int j = 1;
+                    ^
+../minigoogle.c:95:13: warning: unused variable 'sizeq' [-Wunused-variable]
+        int sizev, sizeq, sizepq = 10;
+                   ^
+3 warnings generated.
+Finished building: ../minigoogle.c
+ 
+Building target: Minigoogleprep
+Invoking: GCC C Linker
+gcc  -o "Minigoogleprep"  ./minigoogle.o   
+Finished building target: Minigoogleprep
+ 
+06:59:02 **** Incremental Build of configuration Debug for project Minigoogleprep ****
+make all 
+make: Nothing to be done for `all'.
+06:59:10 **** Incremental Build of configuration Debug for project Minigoogleprep ****
+make all 
+make: Nothing to be done for `all'.
+14:58:46 **** Incremental Build of configuration Debug for project Minigoogleprep ****
+make all 
+Building file: ../minigoogle.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"minigoogle.d" -MT"minigoogle.d" -o "minigoogle.o" "../minigoogle.c"
+../minigoogle.c:46:6: warning: unused variable 'i' [-Wunused-variable]
+        int i;
+            ^
+../minigoogle.c:97:7: warning: unused variable 'j' [-Wunused-variable]
+                int j = 1;
+                    ^
+../minigoogle.c:87:13: warning: unused variable 'sizeq' [-Wunused-variable]
+        int sizev, sizeq, sizepq = 10;
+                   ^
+3 warnings generated.
+Finished building: ../minigoogle.c
+ 
+Building target: Minigoogleprep
+Invoking: GCC C Linker
+gcc  -o "Minigoogleprep"  ./minigoogle.o   
+Finished building target: Minigoogleprep
+ 
+14:59:14 **** Incremental Build of configuration Debug for project Minigoogleprep ****
+make all 
+make: Nothing to be done for `all'.
+14:59:24 **** Incremental Build of configuration Debug for project Minigoogleprep ****
+make all 
+make: Nothing to be done for `all'.
+15:00:23 **** Incremental Build of configuration Debug for project Minigoogleprep ****
+make all 
+Building file: ../hello.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello.d" -MT"hello.d" -o "hello.o" "../hello.c"
+../hello.c:9:2: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+        printf("Hello, World\n");
+        ^
+../hello.c:9:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+Finished building: ../hello.c
+1 warning generated.
+ 
+Building target: Minigoogleprep
+Invoking: GCC C Linker
+gcc  -o "Minigoogleprep"  ./hello.o ./minigoogle.o   
+duplicate symbol _main in:
+    ./hello.o
+    ./minigoogle.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Minigoogleprep] Error 1
+15:00:52 **** Incremental Build of configuration Debug for project Minigoogleprep ****
+make all 
+Building file: ../hello.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello.d" -MT"hello.d" -o "hello.o" "../hello.c"
+Finished building: ../hello.c
+ 
+Building target: Minigoogleprep
+Invoking: GCC C Linker
+gcc  -o "Minigoogleprep"  ./hello.o ./minigoogle.o   
+duplicate symbol _main in:
+    ./hello.o
+    ./minigoogle.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Minigoogleprep] Error 1

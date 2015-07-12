@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;BellmanFord&apos; to &apos;com.BellmanFord&apos;&#x0A;- Original project: &apos;ADS4&apos;&#x0A;- Original element: &apos;ADS4/src/BellmanFord&apos;&#x0A;- Renamed element: &apos;ADS4/src/com.BellmanFord&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename subpackages of the package" description="Rename package &apos;BellmanFord&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;BellmanFord" name="com.BellmanFord" qualified="false" references="true" stamp="1427773304649" textual="false" version="1.0"/>
+</session>

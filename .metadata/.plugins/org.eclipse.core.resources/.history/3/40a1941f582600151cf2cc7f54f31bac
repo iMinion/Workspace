@@ -1,0 +1,272 @@
+import java.util.Scanner;
+import java.util.Stack;
+
+class BST {
+	private Node root = null;
+	private StringBuilder sb = new StringBuilder();
+	private int max;
+	private int count;
+	private Stack<PathNode> path;
+	private Node n;
+	
+	
+	public Node getPrev(int data, Node trav, Node prev) {
+		if(trav.getData() == data) {
+			return prev;
+		}
+		else {
+			if(trav.getData() > data) 
+				return getPrev(data, trav.getLeft(), trav);
+			else return getPrev(data, trav.getRight(), trav);
+		}
+	}
+	
+	public void insert(int data) {
+		if(root == null) {
+			root = new Node(data);
+			max = data;
+		}
+		else {
+			if(data > max) max = data;
+			insert(root, new Node(data));
+		}
+	}
+	
+	public void insert(Node root, Node data) {
+		if(root == null) {
+			root = data;
+		}
+		else if(root.getData() > data.getData()) {
+			if(root.getLeft() == null) {
+				root.setLeft(data); 
+			}
+			else insert(root.getLeft(), data);
+		}
+		else {
+			if(root.getRight() == null) {
+				root.setRight(data);
+			}
+			else insert(root.getRight(), data);
+		}
+	}
+	
+	public String inOrder() {
+		sb = new StringBuilder();
+		inOrder(root);
+		if(sb.length() > 0) return sb.toString().substring(0, sb.length() -1);
+		else return sb.toString();
+	}
+	
+	public void inOrder(Node root) {
+		if(root != null) {
+			inOrder(root.getLeft());
+			System.out.println(root.getData());
+//			sb.append(Integer.toString(root.getData()));
+//			sb.append(",");
+			inOrder(root.getRight());
+		}
+	}
+	
+	public void makeRoot(int data) {
+		Node trav = search(data);
+		n = null;
+		if(trav != null) {
+			if(path.size() != 0) {
+			}
+		}
+		else { System.out.println(0); }
+	}
+	
+	public int makeRoot() {
+		if(path.size() > 0) {
+			PathNode temp = path.pop();
+			if(temp.getFlag()) {
+				if(n != null) temp.getPathNode().setRight(n);
+				n = rotateLeft(temp.getPathNode(), 
+						temp.getPathNode().getRight());
+				System.out.println(n);
+			}
+			else {
+				if(n != null) temp.getPathNode().setLeft(n);
+				n = rotateRight(temp.getPathNode(), 
+						temp.getPathNode().getLeft());
+			}
+			if(path.size() == 0) {
+				root = n;
+			}
+			return makeRoot() + 1;
+		}
+		else return 0;
+	}
+	
+	public String postOrder() {
+		sb = new StringBuilder();
+		postOrder(root);
+		if(sb.length() > 0) return sb.toString().substring(0, sb.length() - 1);
+		else return sb.toString();
+	}
+	
+	public void postOrder(Node root) {
+		if(root != null) {
+			postOrder(root.getLeft());
+			postOrder(root.getRight());
+			sb.append(Integer.toString(root.getData()));
+			sb.append(",");
+		}
+	}
+	
+	public String preOrder() {
+		sb = new StringBuilder();
+		preOrder(root);
+		if(sb.length() > 0) return sb.toString().substring(0, sb.length() - 1);
+		else return sb.toString();
+	}
+	
+	public void preOrder(Node root) {
+		if(root != null) {
+			sb.append(Integer.toString(root.getData()));
+			sb.append(",");
+			preOrder(root.getLeft());
+			preOrder(root.getRight());
+		}
+	}
+	
+	public void removeNode(int data) {
+		removeNode(root, data, null);
+	}
+	
+	public  void removeNode(Node node,int data,Node prev){	
+		if(node.getData() == data){
+			if(node.getLeft() == null && node.getRight() ==null){
+				if(prev.getData()>node.getData()){
+					prev.setLeft(null);
+				}else prev.setRight(null);
+			}else if(node.getRight() == null){
+				if(prev.getData() > node.getData()){
+					prev.setLeft(node.getLeft());
+				}else prev.setRight(node.getLeft());
+			}else if(node.getLeft() == null){
+				if(prev.getData()>node.getData()){
+					prev.setLeft(node.getRight());
+				}else prev.setRight(node.getRight());
+			}else{
+				Node temp=node.getLeft();
+				Node tmpPrev=null;
+				while(temp.getRight() != null){
+					tmpPrev=temp;
+					temp=temp.getRight();
+				}
+				node.setData(temp.getData());
+				tmpPrev.setRight(null);
+			}
+		}else if(node.getData() > data){
+			prev=node;
+			removeNode(node.getLeft(),data,prev);
+		}else{
+			prev=node;
+			removeNode(node.getRight(),data,prev);
+		}
+	}
+	
+	public Node rotateLeft(Node prev, Node trav) {
+		prev.setRight(trav.getLeft());
+		trav.setLeft(prev);
+		return trav;
+	}
+	
+	public Node rotateRight(Node prev, Node trav) {
+		prev.setLeft(trav.getRight());
+		trav.setRight(prev);
+		return trav;
+	}
+	
+	public Node search(int data) {
+		sb = new StringBuilder();
+		count = 0;
+		path = new Stack<PathNode>();
+		Node temp =new Node(data);
+		Node n = search(root, temp, null);
+		if(n == null) sb.append(false);
+		else sb.append(true);
+		sb.append(",");
+		sb.append(count);
+		return n;
+	}
+	
+	public Node search(Node trav, Node node, Node temp) {
+		if(trav == null || node == null) {
+			if(temp == null) count = 0;
+			else count = temp.getData();
+			return null;
+		}
+		else {
+			count++;
+			if(trav.getData() > node.getData()) {
+				if(trav.getLeft() != null) {
+					if(trav.getLeft().getData() > node.getData())  { temp = trav.getLeft(); } 
+				}
+				path.push(new PathNode(trav, false));
+				return search(trav.getLeft(), node, temp);
+			}
+			else if(trav.getData() < node.getData()) {
+				if(trav.getRight() != null) {
+					if(trav.getRight().getData() > node.getData()) { temp = trav.getRight(); }
+				}
+				path.push(new PathNode(trav, true));
+				return search(trav.getRight(), node, temp);
+			}
+			else {
+				return temp;
+			}
+		}
+	}
+	
+	public String toString() {
+		return sb.toString();
+	}
+}
+class PathNode {
+	Node n;
+	/*
+	 * true means go right
+	 * false means go left
+	 */
+	boolean flag;
+	
+	public PathNode(Node n, boolean flag) {
+		this.n = n;
+		this.flag = flag;
+	}
+	
+	public Node getPathNode() {
+		return n;
+	}
+	
+	public boolean getFlag() {
+		return flag;
+	}
+	
+	public String toString() {
+		return n.toString() + "\n";
+	}
+}
+public class BinarySearchTree {
+	public static void main(String[] args) {
+		BST bst = new BST();
+		System.out.println();
+		Scanner sc = new Scanner(System.in);
+		String str[] = sc.nextLine().split(",");
+		for(int i = 0; i < str.length; ++i) {
+			bst.insert(Integer.parseInt(str[i])); 
+		}
+		int search = Integer.parseInt(sc.nextLine());
+		bst.makeRoot(search);
+		
+		int order = Integer.parseInt(sc.nextLine());
+		if(order == 1) System.out.println(bst.preOrder());
+		else if(order == 2) System.out.println(bst.inOrder());
+		else System.out.println(bst.postOrder());
+		
+		sc.close();
+	}
+}

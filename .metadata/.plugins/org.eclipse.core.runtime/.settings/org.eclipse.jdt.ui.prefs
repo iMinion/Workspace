@@ -1,0 +1,33 @@
+Refactoring.savealleditors=true
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="myQueue"><rhs name\="myQueue"/></lhs><lhs name\="DiffMergeSort"><rhs name\="DiffMergeSort"/></lhs><lhs name\="com.leda2.exam.SortedListPC2"><rhs name\="com.leda2.exam.SortedListPC2"/></lhs><lhs name\="com.leda2.exam.MyHashTablePC2"><rhs name\="com.leda2.exam.MyHashTablePC2"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="com.leda2.exam.CustomSort"><rhs name\="com.leda2.exam.CustomSort"/></lhs><lhs name\="QuickSelectArrayList"><rhs name\="QuickSelectArrayList"/></lhs><lhs name\="InFixPostFixConversion"><rhs name\="InFixPostFixConversion"/></lhs><lhs name\="myStack"><rhs name\="myStack"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.Hashtable"/><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Hashtable"/><rhs name\="java.sql.Date"/><rhs name\="java.util.HashMap"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Dictionary"><rhs name\="java.util.Hashtable"/></lhs><lhs name\="java.util.Hashtable"><rhs name\="java.util.Hashtable"/></lhs><lhs name\="javafx.scene.layout.Pane"><rhs name\="javafx.scene.layout.GridPane"/></lhs><lhs name\="javafx.scene.layout.Region"><rhs name\="javafx.scene.layout.GridPane"/></lhs><lhs name\="javafx.scene.Parent"><rhs name\="javafx.scene.layout.GridPane"/></lhs><lhs name\="javafx.scene.Node"><rhs name\="javafx.scene.layout.GridPane"/></lhs><lhs name\="javafx.event.EventTarget"><rhs name\="javafx.scene.layout.GridPane"/></lhs><lhs name\="javafx.css.Styleable"><rhs name\="javafx.scene.layout.GridPane"/></lhs><lhs name\="javafx.scene.layout.GridPane"><rhs name\="javafx.scene.layout.GridPane"/></lhs><lhs name\="FloatingPointRecognizer"><rhs name\="FloatingPointRecognizer"/></lhs><lhs name\="com.cwc_2.ErdosNumbers"><rhs name\="com.cwc_2.ErdosNumbers"/></lhs><lhs name\="java.time.temporal.Temporal"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.time.temporal.TemporalAdjuster"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.time.chrono.ChronoLocalDate"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.time.temporal.TemporalAccessor"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.util.Date"><rhs name\="java.sql.Date"/></lhs><lhs name\="java.sql.Date"><rhs name\="java.sql.Date"/></lhs><lhs name\="com.MembersTeams.MembersTeams"><rhs name\="com.MembersTeams.MembersTeams"/></lhs><lhs name\="javafx.scene.paint.Paint"><rhs name\="javafx.scene.paint.Color"/></lhs><lhs name\="BinarySearchTree"><rhs name\="BinarySearchTree"/></lhs><lhs name\="com.cwc_5.LongestReversePalindrome"><rhs name\="com.cwc_5.LongestReversePalindrome"/></lhs><lhs name\="BreadthFirstSearch"><rhs name\="BreadthFirstSearch"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.math.BigInteger"/></lhs><lhs name\="java.math.BigInteger"><rhs name\="java.math.BigInteger"/></lhs><lhs name\="java.util.AbstractMap"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.HashMap"><rhs name\="java.util.HashMap"/></lhs><lhs name\="com.FloydWarshall.FloydWarshall"><rhs name\="com.FloydWarshall.FloydWarshall"/></lhs><lhs name\="com.Jhonson.JhonsonAlgo"><rhs name\="com.Jhonson.JhonsonAlgo"/></lhs><lhs name\="java.util.AbstractQueue"><rhs name\="java.util.PriorityQueue"/></lhs><lhs name\="java.util.Queue"><rhs name\="java.util.PriorityQueue"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.PriorityQueue"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.PriorityQueue"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.PriorityQueue"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.PriorityQueue"><rhs name\="java.util.PriorityQueue"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.io.Writer"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.io.PrintWriter"><rhs name\="java.io.PrintWriter"/></lhs></history>
+content_assist_number_of_computers=22
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+do_not_ask_to_install_user_dictionary=true
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Monaco|12.0|0|COCOA|1|Monaco;
+proposalOrderMigrated=true
+spelling_ignore_ampersand_in_properties=true
+spelling_ignore_digits=true
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+spelling_ignore_non_letters=true
+spelling_ignore_sentence=true
+spelling_ignore_single_letters=true
+spelling_ignore_upper=true
+spelling_ignore_urls=true
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

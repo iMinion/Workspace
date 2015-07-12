@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 6 elements to &apos;Della10FX/src/com.Layout&apos;&#x0A;- Original project: &apos;Della10FX&apos;&#x0A;- Destination element: &apos;Della10FX/src/com.Layout&apos;&#x0A;- Original elements:&#x0A;     members.fxml&#x0A;     ActionItems.fxml&#x0A;     application.css&#x0A;     Team.fxml&#x0A;     home.fxml&#x0A;     login.fxml&#x0A;- Update references to refactored element" description="Move files" destination="/src&lt;com.Layout" element1="src/application/members.fxml" element2="src/application/ActionItems.fxml" element3="src/application/application.css" element4="src/application/Team.fxml" element5="src/application/home.fxml" element6="src/application/login.fxml" files="6" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1421924325403" units="0" version="1.0"/>
+</session>

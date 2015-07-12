@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;karatsuba4&apos; to &apos;k432&apos;&#x0A;- Original project: &apos;ADS1&apos;&#x0A;- Original element: &apos;karatsuba4&apos;&#x0A;- Renamed element: &apos;k432&apos;&#x0A;- Update references to refactored element&#x0A;- Rename similarly named elements&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;karatsuba4&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{karatsuba4.java[karatsuba4" matchStrategy="1" name="k432" qualified="false" references="true" similarDeclarations="true" stamp="1414643966509" textual="true" version="1.0"/>
+</session>

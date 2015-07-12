@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;ADS1/src&apos;&#x0A;- Original project: &apos;ADS1_M1&apos;&#x0A;- Destination element: &apos;ADS1/src&apos;&#x0A;- Original elements:&#x0A;     digitMultiplication.java&#x0A;     Addition.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="=ADS1/src" element1="/src&lt;{digitMultiplication.java" element2="/src&lt;{Addition.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1414474172301" units="2" version="1.0"/>
+</session>
