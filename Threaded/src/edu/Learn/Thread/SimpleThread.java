@@ -8,7 +8,23 @@ public class SimpleThread extends Thread{
 	}
 	
 	public void run() {
-		
+		System.out.println(id + " Started");
+		System.out.flush();
+		for (int i = 0; i < 10; i++) {
+			try {
+				sleep(delay);
+			}
+			catch(InterruptedException e) {
+				System.out.println("sleep interrupted: "+e);
+			}
+			System.out.println("Thread" + id + ": i = " +i);
+		}
+		System.out.println("Thread" + id + " finished.");
+	}
+	
+	public static void main(String[] args) {
+		SimpleThread t = new SimpleThread(1, 1000);
+		t.run();
 	}
 	
 	private int id;
