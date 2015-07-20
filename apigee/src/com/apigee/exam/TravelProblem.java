@@ -58,11 +58,19 @@ class TP {
 	
 	public boolean routeExists(int i) {
 		int start = i;
-		for(; !allTraversed() || i != start; i++) {
+		for(; !allTraversed(); i++) {
 			if(i == n) i = 0;
 			if(m.getLitLeft() + litres[i] >= dist[i]) {
 				m.setLit(m.getLitLeft() + litres[i] - dist[i]);
 				allTraversed[i] = true;
+			}
+			else return false;
+		}
+		i %= n;
+		for(; i != start; i = (i + 1) % n) {
+			System.out.println("the " + i);
+			if(m.getLitLeft() + litres[i] >= dist[i]) {
+				m.setLit(m.getLitLeft() + litres[i] - dist[i]);
 			}
 			else return false;
 		}
