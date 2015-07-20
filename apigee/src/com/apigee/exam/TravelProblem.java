@@ -29,3 +29,26 @@ class TP {
 	
 	
 }
+
+class MB {
+	int lit = 0;
+	int dis = 0;
+	
+	public int getDis() {
+		return dis;
+	}
+	
+	public int getLitLeft() {
+		return lit;
+	}
+	
+	public void setDis(int dis) {
+		this.dis = dis;
+	}
+	
+	public void setLit(int lit) {
+		this.lit = lit;
+	}
+	
+	
+}
