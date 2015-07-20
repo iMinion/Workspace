@@ -38,7 +38,7 @@ class TP {
 			m = new MB();
 			if(litres[i] > dist[i]) {
 				for(int j = 0; j < n; j++) allTraversed[j] = false;
-				if(isRoutePossible(i)) return i;
+				if(routeExists(i)) return i;
 			}
 		}
 		return -1;
@@ -50,10 +50,23 @@ class TP {
 			m = new MB();
 			if(litres[i] > dist[i]) {
 				for(int j = 0; j < n; j++) allTraversed[j] = false;
-				if(isRoutePossible(i)) count++;
+				if(routeExists(i)) count++;
 			}
 		}
 		return count;
+	}
+	
+	public boolean routeExists(int i) {
+		int start = i;
+		for(; !allTraversed() || i != start; i++) {
+			if(i == n) i = 0;
+			if(m.getLitLeft() + litres[i] >= dist[i]) {
+				m.setLit(m.getLitLeft() + litres[i] - dist[i]);
+				allTraversed[i] = true;
+			}
+			else return false;
+		}
+		return true;
 	}
 	
 	public boolean isRoutePossible(int i) {
